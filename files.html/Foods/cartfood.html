@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- link style sheet -->
+    <link rel="stylesheet" href="../../files.css/Foods/cartfood.css">
+    <!-- link font awsome -->
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="../../files.css/bootstrap/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="ordered" id="ordered">
+        <div action="">
+            <div><span id="totalPrice"></span> has been debited from your card and Your order is on its way to you</div>
+            <button id="btn-done">OK</button>
+        </div>
+    </div>
+
+    <div class="false" id="false">
+        <div>
+            Please choose a payment method
+            <button id="btn-false">OK</button>
+        </div>
+    </div>
+
+
+    <div class="main" id="main-pay">
+        <div action="#" class="card">
+            <div>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <p class="text-center">
+                Your order is on its <br>
+                way to you
+            </p>
+            <button id="main-btn">OK</button>
+        </div>
+    </div>
+    
+    <main>
+        <div class="container">
+            <div class="card front-face">
+                <header>
+                    <span class="logo">
+                        <img src="../../imgs/visa/logo.png" alt="">
+                        <h5>Master Card</h5>
+                    </span>
+                    <img src="../../imgs/visa/chip.png" alt="" class="chip">
+                </header>
+                <div class="card-details">
+                    <div class="name-number">
+                        <h6>Card Number</h6>
+                        <h5 class="number">8050 2030 3020 5040</h5>
+                        <h5 class="name" id="userName">Thomas Beshoy Sameh</h5>
+                    </div>
+    
+                    <div class="valid-date">
+                        <h6>Valid Thru</h6>
+                        <h5>05\28</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card back-face">
+                <h6>
+                    for custmor service call +977 4344 3433 or email at 
+                    mastercard@gmail.com
+                </h6>
+                <span class="magntic"></span>
+                <div class="signature">
+                    <div>
+                        <input id="credit" type="text" class="form-control" placeholder="14-digit credit card">
+                        <div>
+                            <button class="btn1" id="buy">Buy Now</button>
+                            <button class="btn2" id="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+
+    <section>
+        <h1 class="text-center" id="h1">Not Found Products in Cart</h1>
+        <table width="100%" id="table1" class="text-center">
+            <thead id="head">
+                <tr >
+                    <th class="py-4">Products</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th >Quantity</th>
+                    <th>Total</th>
+                    <th>Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td ></td>
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+        <div id="table" class="d-sm-none d-block pt-4">
+            
+        </div>
+        <div class="total-price">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-5 col-md-6 mt-5 " >
+                        <div class="wrapper p-5" id="payment">
+                            <h3 class="text-center mb-4">Payment Method</h3>
+                            <input class="select" type="radio" name="select" id="option-1">
+                            <input class="select" type="radio" name="select" id="option-2">
+                            <label for="option-1" class="option option-1 mb-3 receipt">
+                                <div class="dot col-3 me-3 "></div>
+                                <span class="">
+                                    Payment upon receipt, but three dollars will be added to the total cost of the products
+                                </span>
+                            </label>
+                            <label for="option-2" class="option option-2 credit">
+                                <div class="dot col-3 me-3"></div>
+                                <span>
+                                    Payment using credit card and shipping will be free
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="ms-auto mt-5 col-lg-5 col-md-6" >
+                        <div class="card p-5" id="price">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-5"></div>
+    </section>
+
+
+
+
+    <!-- script scripting -->
+    <script src="../../files.js/Foods/cartfood.js" type="module"></script>
+    <!-- script font awsome -->
+    <script src="../../fontawesome/js/all.js"></script>
+    <!-- script bootstrap -->
+    <script src="../../files.js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

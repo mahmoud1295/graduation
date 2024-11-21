@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --chocolate: rgba(161, 109, 14,1);
+    --chocolate1:rgb(239, 239, 239);
+    --darkcolor: #2e1700;
+    --lightcolor: #573818;
+}
+
+html,.parent {
+    background-color: var(--chocolate1);
+}
+.star {
+    color: var(--chocolate);
+    margin-bottom: 20px;
+}
+.minus {
+    border-right: 1px solid #a4a4a4;
+}
+.plus {
+    border-left: 1px solid #a4a4a4;
+}
+.minus,.plus {
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount {
+    /* padding: 0 10px; */
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.parent2 .quantity {
+    display: flex;
+    /* width: fit-content; */
+    /* margin: auto; */
+    /* background-color: #573818; */
+    border: 1px solid #8e8e8e;
+    margin-bottom: 20px;
+}
+.quantity button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    font-size: 30px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.quantity button:hover {
+    background-color: #AAA;
+}
+
+.parent1 {
+    background-color: rgba(171, 100, 28, 0.31);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    padding: 20px 0;
+    /* background-color: var(--chocolate); */
+}
+.parent2 {
+    margin-top: 10px;
+    padding: 20px 20px;
+    /* color: white; */
+}
+
+.parent2 h2 {
+    font-weight: 600;
+    /* font-size: 40px; */
+    color: var(--lightcolor);
+    margin-bottom: 20px;
+}
+.parent2 h4 {
+    color: var(--chocolate);
+    margin-bottom: 20px;
+}
+.parent2 p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.parent2>button {
+    /* width: 100%; */
+    height: 50px;
+    border: none;
+    background-color: var(--chocolate);
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.parent2>button:hover {
+    background-color: var(--lightcolor);
+}

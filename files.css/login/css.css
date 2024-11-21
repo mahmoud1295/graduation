@@ -1,0 +1,118 @@
+/* body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+} */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: #afafaf;
+    color: black;
+}
+
+
+.container-fluid {
+    height: 100vh;
+    background-color: #dde1e7;
+}
+
+.content {
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73, 
+                2px 2px 5px rgba(94, 104, 121, 0.288);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.content .text {
+    font-size: 33px;
+    font-weight: 600;
+    color: #595959;
+}
+
+
+.content .check {
+    height: 30px;
+    font-size: 14px;
+    color: red;
+}
+@media (max-width:400px) {
+    .content .check {
+        font-size: 10px;
+    }
+}
+
+.content .field {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #babecc,
+                    inset -5px -5px 10px #ffffff73;
+}
+
+.content .field input {
+    padding: 0 15px;
+    height: 100%;
+    width: 89%;
+    color: #595959;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.forget-pass a {
+    font-size: 15px;
+    color: #3498bd;
+}
+
+.forget-pass a:hover{
+    text-transform: underline;
+}
+
+div button {
+    margin: 15px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #595959;
+    background-color: #dde1e7;
+    border: none;
+    box-shadow: 2px 2px 5px #babecc,
+                -5px -5px 10px #ffffff73;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+div button:hover {
+    color: #3498bd;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+
+} 
